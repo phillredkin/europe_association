@@ -241,7 +241,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 50px); /* Увеличиваем высоту, чтобы включить about_us_section */
+  height: calc(100% - 50px);
   background-color: #0842c0;
   z-index: -1;
 }
@@ -389,7 +389,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
   margin: 0 auto;
   gap: 40px;
 }
