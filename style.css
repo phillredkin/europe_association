@@ -477,3 +477,26 @@
     text-align: center;
   }
 }
+
+
+
+
+.zakladatelia_wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.zakladatelia_wrapper img {
+  border-radius: 8px;
+  margin-right: 30px;
+}
+
+.zakladatelia_wrapper h5 {
+  color: #0842c0;
+  font-weight: bold;
+  line-height: 0.9;
+}
