@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
 
@@ -169,6 +172,7 @@
   </div>
 </section>
 
+
 <div class="container">
   <h5 class="page_heading">Partneri</h5>
   <h3 class="page_subheading">Zakladatelia EAO</h3>
@@ -248,11 +252,51 @@
       </div>
     </div>
   </div>
+      
+  <div class="container">
+    <h5 class="page_heading">Partneri</h5>
+    <h3 class="page_subheading">Generalny partner</h3>
+  </div>
+
+  <div class="partner_img">
+    <div class="container">
+      <img src="assets/loga/logo-volita.svg" alt="Partner">
+    </div>
+  </div>
+
+  <div class="container">
+    <h5 class="page_heading">Partneri</h5>
+    <h3 class="page_subheading">Nasi partneri</h3>
+  </div>
+
+  <section class="partners-carousel">
+    <div class="container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/loga/partner-1.svg" alt="Partner 1"></div>
+            <div class="swiper-slide"><img src="assets/loga/partner-2.svg" alt="Partner 2"></div>
+            <div class="swiper-slide"><img src="assets/loga/partner-3.svg" alt="Partner 3"></div>
+            <div class="swiper-slide"><img src="assets/loga/partner-4.png" alt="Partner 4"></div>
+            <div class="swiper-slide"><img src="assets/loga/partner-5.png" alt="Partner 5"></div>
+            <div class="swiper-slide"><img src="assets/loga/partner-6.svg" alt="Partner 6"></div>
+            <div class="swiper-slide"><img src="assets/loga/partner-8.svg" alt="Partner 7"></div>
+            <div class="swiper-slide"><img src="assets/loga/partner-9.svg" alt="Partner 8"></div>
+        </div>
+      </div>
+    </div>
 </section>
-    
-<div class="container">
-  <h5 class="page_heading">Partneri</h5>
-  <h3 class="page_subheading">Generalny partner</h3>
+
+
+<div class="partneri_text">
+  <div class="container">
+    <p>
+      Etiam ipsum lacus, vehicula eu porttitor in, eleifend quis purus. Sed a nibh <br>
+      condimentum quam cursus eleifend. <br><br>
+      Nam eleifend sem dolor, eu sodales tortor ullamcorper at. Curabitur a mauris sodales, <br>
+      interdum ipsum vitae, posuere tellus.
+    </p>
+    <a href="#" class="be_partner">CHCETE SA STAŤ PARTNEROM?</a>
+  </div>
 </div>
 
 
@@ -265,6 +309,44 @@ document.getElementById('menu-icon').onclick = function() {
 document.getElementById('overlay-close').onclick = function() {
   document.getElementById('nav-overlay').classList.remove('active');
 }
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 7,
+    spaceBetween: 20,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        1400: {
+            slidesPerView: 7
+        },
+        1200: {
+            slidesPerView: 7
+        },
+        992: {
+            slidesPerView: 6
+        },
+        768: {
+            slidesPerView: 5
+        },
+        600: {
+            slidesPerView: 5
+        },
+        475: {
+            slidesPerView: 4
+        },
+        0: {
+            slidesPerView: 3
+        }
+    }
+});
+
+
+
 </script>
 </body>
 </html>

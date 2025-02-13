@@ -478,9 +478,6 @@
   }
 }
 
-
-
-
 .zakladatelia_wrapper {
   background-color: #fff;
   border-radius: 8px;
@@ -499,4 +496,65 @@
   color: #0842c0;
   font-weight: bold;
   line-height: 0.9;
+}
+
+.partner_img {
+  text-align: center;
+  margin-top: -20px;
+}
+
+.partners-carousel {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.swiper {
+  width: 100%;
+  margin: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide img {
+  max-width: 120px;
+  height: auto;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.swiper-slide-active img {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+
+.partneri_text {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.partneri_text p {
+  font-family: 'Arial', serif;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.partneri_text a.be_partner {
+  margin: 0 auto;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0842c0;
+  padding: 12px 50px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all .8s ease;
+}
+
+.partneri_text a.be_partner:hover {
+  background-color: #2f6ae9;
 }
